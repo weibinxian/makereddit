@@ -57,7 +57,7 @@ app.use((err, req, res, next) => {
 
 
 
-const mongoose =require('mongoose');
+const mongoose = require('mongoose');
 const mongoURI = process.env.DB_PATH;
 
 mongoose.connect(mongoURI)
