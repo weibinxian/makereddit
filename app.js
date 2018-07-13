@@ -1,3 +1,4 @@
+require('dotenv').config();
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -57,7 +58,7 @@ app.use((err, req, res, next) => {
 
 
 const mongoose =require('mongoose');
-const mongoURI = 'mongodb://msuser:makeschool123@ds127851.mlab.com:27851/makereddit';
+const mongoURI = process.env.DB_PATH;
 
 mongoose.connect(mongoURI)
 mongoose.Promise = global.Promise;
