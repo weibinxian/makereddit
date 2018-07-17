@@ -1,9 +1,14 @@
 <div>
   Rooms index
+  <form action="/search" method="POST">
+    <input type="text" name="search-topic" placeholder="Search Topic..." />
+    <input type="submit" value="Search" />
+    </form>
 </div>
 
 <div>
-  <ul>
+    
+  <ul id="list">
       {{#each rooms as |room|}}
       <li>
         <a href= "/rooms/{{room.id}}">{{room.topic}}</a> | <a href="/rooms/{{room.id}}/edit">edit</a>

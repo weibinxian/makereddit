@@ -22,6 +22,18 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+//search
+router.get('/search', (req, res) =>{
+  res.redirect('/rooms');
+});
+
+//Search post
+router.post('/search', (req, res) =>{
+  console.log(req.body);
+  res.status(204).send({});
+
+});
+
 // post login
 router.post('/login', (req, res, next) => {
 // 1
