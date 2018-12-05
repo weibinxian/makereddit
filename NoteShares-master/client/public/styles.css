@@ -1,0 +1,15 @@
+
+
+/*Nav bar css*/
+.logo, .links {
+    display: inline-block;
+}
+
+.links {
+    float:right;
+}
+
+/*Nav bar css*/
+.home-page {
+    text-align: center;
+}
